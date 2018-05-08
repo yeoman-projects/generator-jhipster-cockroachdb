@@ -17,7 +17,7 @@ module.exports = class extends BaseGenerator {
                 if (!this.jhipsterAppConfig) {
                     this.error('Can\'t read .yo-rc.json');
                 }
-                if (this.jhipsterAppConfig.devDatabaseType !== 'postgresql' &&
+                if (this.jhipsterAppConfig.devDatabaseType !== 'postgresql' ||
                     this.jhipsterAppConfig.prodDatabaseType !== 'postgresql') {
                     this.error('You need to have Postgresql as development and production database type');
                 }
