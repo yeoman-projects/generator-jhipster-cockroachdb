@@ -1,6 +1,6 @@
 {
   "name": "generator-jhipster-cockroachdb",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Jhipster CockroachDB",
   "keywords": [
     "yeoman-generator",
