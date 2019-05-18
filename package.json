@@ -23,11 +23,12 @@
   },
   "dependencies": {
     "chalk": "2.1.0",
-    "generator-jhipster": ">=4.6.0",
+    "generator-jhipster": ">=6.0.0",
     "mkdirp": "0.5.1",
     "semver": "5.3.0",
     "shelljs": "0.5.3",
-    "yeoman-generator": "2.0.0"
+    "yeoman-generator": "2.0.5",
+    "snyk": "^1.165.1"
   },
   "devDependencies": {
     "eslint": "4.7.2",
@@ -46,10 +47,13 @@
     "release:patch": "npm version patch -a -m \"Update to %s\" && npm run release",
     "release:minor": "npm version minor -a -m \"Update to %s\" && npm run release",
     "release:major": "npm version major -a -m \"Update to %s\" && npm run release",
-    "test": "mocha test/*"
+    "test": "mocha test/*",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/ctamisier/generator-jhipster-cockroachdb/issues"
-  }
+  },
+  "snyk": true
 }
